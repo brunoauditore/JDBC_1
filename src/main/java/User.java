@@ -67,7 +67,7 @@ public class User implements UserI {
         if(resultSet.next()){
             return resultSet.getInt(1);
         } else
-            return 0;
+            return -1;
     }
 
     public String get_departament(String name) throws SQLException {
@@ -100,7 +100,7 @@ public class User implements UserI {
         if(resultSet.next()){
             return resultSet.getInt(1);
         } else
-            return 0;
+            return -1;
     }
 
     public int get_age(int id) throws SQLException {
@@ -111,6 +111,6 @@ public class User implements UserI {
         if(resultSet.next()){
             return resultSet.getInt(1);
         } else
-            return 0;
+            return -1;
     }
 }
